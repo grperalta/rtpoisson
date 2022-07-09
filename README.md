@@ -9,7 +9,7 @@ written in displacement-pressure (or temperature-heat flux) formulation:
                                   u = 0,        on Gamma,
     over all controls q in L^2(Omega).
 
-Here, u and p are the displacement and pressure (or temperature of heat flux,
+Here, u and p are the displacement and pressure (or temperature and heat flux,
 respectively). Mixed and Hybrid finite element methods using the lowest order
 Raviart-Thomas finite elements are utilized. The computational domain is the
 unit square (0, 1)^2.
