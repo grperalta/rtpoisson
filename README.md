@@ -14,6 +14,9 @@ respectively). Mixed and Hybrid finite element methods using the lowest order
 Raviart-Thomas finite elements are utilized. The computational domain is the
 unit square (0, 1)^2.
 
+Performance with the usual H1-conforming FEM was compared based on an 
+eigenfunction of the Dirichlet Laplacian.
+
 For more details, refer to the manuscript:
     G. Peralta, Error Estimates for Mixed and Hybrid FEM for Elliptic
     Optimal Control Problems with Penalizations, preprint.
