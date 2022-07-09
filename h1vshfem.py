@@ -29,7 +29,7 @@ def generate_data():
         F[mesh.bdy_node_indices] = 0.0
         F[mesh.bdy_node_indices + mesh.num_node] = 0.0
         u, w = np.split(spsolve(K, F), 2)                                # temperature and its adjoint
-        q = -(1/gamma)*w                                                 # numerical optima control
+        q = -(1/gamma)*w                                                 # numerical optimal control
         error[i, 0] = np.sqrt(np.dot(M*(q - qe), q - qe))                # error in control
         error[i, 1] = np.sqrt(np.dot(A*(u - e), u - e))                  # error in flux
         error[i, 2] = np.sqrt(np.dot(M*(u - e), u - e))                  # error in temperature
